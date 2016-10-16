@@ -10,7 +10,8 @@ And flows to the downstream components as props.
 
 Building instructions:
 
-1)  npm install --save-dev babel-core babel-loader babel-plugin-react-hot babel-preset-es2015 babel-preset-react react react-dom react-highcharts react-hot-loader webpack webpack-dev-server
+1)	Install required dependencies  
+	npm install --save-dev babel-core babel-loader babel-plugin-react-hot babel-preset-es2015 babel-preset-react react react-dom react-highcharts react-hot-loader webpack webpack-dev-server
 
 	npm install --save jquery
 
