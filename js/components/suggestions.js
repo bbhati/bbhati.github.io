@@ -15,7 +15,7 @@ let Suggestions = React.createClass({
             let className = "dataRow"
             return <tr className = { className }
             key = { datum }
-            onClick = { this.onClick } > < td data - obj = { datum } > { datum } < /td></tr >
+            onClick = { this.onClick } > < td data-obj = { datum } > { datum } < /td></tr >
         })
         return <table className = "rows" > < tbody > { rows } < /tbody></table >
     },
