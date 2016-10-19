@@ -1,34 +1,25 @@
-tr:nth-child(odd) {
-    background-color: #f2f2f2
+tr:nth-child(odd){background-color: #f2f2f2}
+table{
+	overflow-x:auto;
+	overflow-y: auto;
 }
-
-table {
-    overflow-x: auto;
-    overflow-y: auto;
-}
-
-th,
-td {
+th, td {
     border: 1px solid black;
 }
-
 .suggestions {
-    position: absolute;
-    top: 30px;
-    z-index: 10
+	position: absolute;
+	top: 30px;
+	z-index: 10
 }
-
 .dropdown {
-    position: relative
+	position: relative
 }
-
 input {
-    width: 100px
+	width: 100px
 }
-
 .datagrid {
-    max-height: 500px;
-    max-width: 500px;
-    overflow-x: auto;
-    overflow-y: auto;
+	max-height: 500px;
+	max-width: 500px;
+	overflow-x:auto;
+	overflow-y: auto;
 }

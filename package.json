@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --host bbhati-ltm2.internal.salesforce.com --hot --progress --colors",
+    "start": "webpack-dev-server --host --hot --progress --colors",
     "build": "webpack --progress --colors"
   },
   "author": "",
