@@ -3,6 +3,7 @@ import DataGrid from './dataGrid.js'
 import DropDown from './dropDown.js'
 import Chart from './chart.js'
 import jquery from 'jquery'
+import config from '../../config/config.js'
 
 let Container = React.createClass({
 	getInitialState() {
@@ -10,7 +11,9 @@ let Container = React.createClass({
 	},
 
 	componentWillMount() {
-		jquery.get("http://localhost:3000/revenue.json").done((response) => {
+		const path = "/revenue.json"
+
+		jquery.get(config.fileserver + path).done((response) => {
 			this.setState({allData: response}, function(){ this.setState({year: this.getYearData()[0]})})
 		}).fail(function(xhr, status, errorThrown){	
 			xhr.cancel;
