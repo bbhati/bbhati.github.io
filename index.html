@@ -18,28 +18,29 @@
       
     </div>
     <div class="large-hero wrapper">
-      <div class="large-hero__text-heading">
-        <h1>My first ever blog post</h1>
-        <h2>Centering text on top of an image</h2>
-      </div>
-      <div class="large-hero__paragraphs">
-        <p>I can not believe it took so long to get my blog up. Don't get me wrong here the first commit I made, just took me literally 5 mins. But, it was just a mental block, I just kept this task at the very bottom of my backburner. Well, better late than never. </p>
-        <p>This blog is going to be about things I care about, and may be some things that fascinate me enough. I am planning to keep it mostly a technical blog, except may be some short stories about my baby. If those are topics of your interest, hope you enjoy reading my posts.</p>
-        <p>Alright, getting to the topic at hand. This is a technique I learned while doing a course on udemy, very good course, highly recommend it. What I am doing here is, giving position relative to the container div, which allows me to absolutely position the div containing text content on top of it. Next, I give absolute position to the text context. Now positioning the text in center horizontally is relatively straight forward, width of 100% and text-align will do the trick. To position vertically, we need to do these steps:
-        1) Give top and left values for position, Here we are bringing the top of the text div at the center of the image, left is at 0 (remember the width is 100%, so left is 0)
-        2) We move the text vertically so that instead of its top being at 50%, its center coincides with the image's center, we are doing that by transform: translateY(-50%); which is basically moving the text div vertically along the negative y-axis 50% relative to the size of the text div. </p>
-        <p>.large-hero {
-            position: relative;
+      <div class="large-hero__text-content">
+        <div class="large-hero__text-heading">
+          <h1>Centering text on top of an image</h1>
+        </div>
+        <div class="large-hero__paragraphs">
+          <p>I can not believe it took so long to get my blog up. Don't get me wrong here the first commit I made, just took me literally 5 mins. But, it was just a mental block, I just kept this task at the very bottom of my backburner. Well, better late than never. </p>
+          <p>This blog is going to be about things I care about, and may be some things that fascinate me enough. I am planning to keep it mostly a technical blog, except may be some short stories about my baby. If those are topics of your interest, hope you enjoy reading my posts.</p>
+          <p>Alright, getting to the topic at hand. This is a technique I learned while doing a course on udemy, very good course, highly recommend it. What I am doing here is, giving position relative to the container div, which allows me to absolutely position the div containing text content on top of it. Next, I give absolute position to the text context. Now positioning the text in center horizontally is relatively straight forward, width of 100% and text-align will do the trick. To position vertically, we need to do these steps:
+          1) Give top and left values for position, Here we are bringing the top of the text div at the center of the image, left is at 0 (remember the width is 100%, so left is 0)
+          2) We move the text vertically so that instead of its top being at 50%, its center coincides with the image's center, we are doing that by transform: translateY(-50%); which is basically moving the text div vertically along the negative y-axis 50% relative to the size of the text div. </p>
+          <p>.large-hero {
+              position: relative;
 
-            &__text-content {
-              position: absolute;
-              top: 50%;
-              left: 0px;
-              width: 100%;
-              text-align: center;
-              transform: translateY(-50%);
-            }
-          }</p>
+              &__text-content {
+                position: absolute;
+                top: 50%;
+                left: 0px;
+                width: 100%;
+                text-align: center;
+                transform: translateY(-50%);
+              }
+            }</p>
+        </div>
       </div>
     </div>
     <div class="navtable"></div>

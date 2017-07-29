@@ -7,6 +7,17 @@
 	font-weight: 300;
 }
 
+.large-hero {
+	position: relative;
+	margin-left: calc(50vw - 500px)
+}
+
+.large-hero__text-content {
+	position: absolute;
+	width: 100%;
+	text-align: justify;
+}
+
 .large-hero h1 {
 	font-weight: 400;
 }
