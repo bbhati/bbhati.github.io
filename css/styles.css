@@ -1,15 +1,18 @@
 .wrapper {
-	max-width: 1000px;
+	max-width: 680px;
 }
 
 .code {
 	font-family: "Monaco";
 	font-weight: 300;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .large-hero {
 	position: relative;
-	margin-left: calc(50vw - 500px)
+	margin-left: calc(50vw - 340px)
 }
 
 .large-hero__text-content {
@@ -24,4 +27,8 @@
 
 .large-hero p {
 	font-weight: 200;
+}
+
+a {
+	color: #d59541;
 }
