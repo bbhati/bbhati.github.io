@@ -1,0 +1,20 @@
+.large-hero {
+	position: relative;
+
+	&__text-content {
+		position: absolute;
+		width: 100%;
+	}
+
+	&__paragraphs {
+		text-align: justify;
+	}
+
+	&__heading {
+		text-align: center;
+	}
+
+	@mixin atMedium {
+		margin-left: calc(50vw - 340px);
+	}
+}

@@ -1,0 +1,7 @@
+.code {
+	font-family: "Monaco";
+	font-weight: 300;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
